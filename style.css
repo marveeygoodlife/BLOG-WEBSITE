@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 *,
 *::before,
 *::after {
@@ -8,9 +11,20 @@
 :root {
     --primary-color: darkslategray;
     --background-color: whitesmoke, snow, white;
-    --font-style: Tahoma, monospace, Helvetica, sans-serif;
-    --font-size: 1em;
-    --xx-font-size: 1.2em;
+    --font-style: "Roboto", "Open Sans", "Lato", "Merriweather";
+    --header-font: "Oswald", "Montserrat", "Playfair";
+    --small-font-style: 1rem;
+    --medium-font-size: 1.125rem;
+    --large-font-size: 1.25rem;
+    --small-H1: 24px;
+    --medium-H1: 28px;
+    --large-H1: 32px;
+    --small-H2: 21px;
+    --medium-H2: 25px;
+    --large-H2: 29px;
+    --small-text: 12px;
+    --medium-small-text: 14px;
+    --large-small-text: 16px;
 }
 
 html {
@@ -23,7 +37,26 @@ body {
     background-color: whitesmoke;
     font-weight: bold;
     font-family: var(--font-style);
-    font-size: var(--font-size);
+    font-size: var(--small-font-style);
+}
+
+h1 {
+    font-size: var(--small-H1);
+}
+
+h2 {
+    font-size: var(--small-H2);
+}
+
+h1,
+h2,
+small,
+dt {
+    font-family: var(--header-font);
+}
+
+span {
+    font-size: var(--small-text);
 }
 
 /* navigation style start */
@@ -165,7 +198,7 @@ footer.spanFooter {
 
 @media screen and (min-width: 600px) {
     body {
-        font-size: 1.2em;
+        font-size: var(--medium-font-size);
     }
 
     .main {
@@ -208,11 +241,18 @@ footer.spanFooter {
         flex: 1 1 25%;
     }
 
+    h1 {
+        font-size: var(--medium-H1);
+    }
 
 
     h2 {
         margin: 1rem;
-        font-size: 2rem;
+        font-size: var(--medium-H2);
+    }
+
+    span {
+        font-size: var(--medium-small-text);
     }
 
     footer#footer {
@@ -229,7 +269,15 @@ footer.spanFooter {
 
 @media screen and (min-width:1024px) {
     body {
-        font-size: 1.3em;
+        font-size: var(--large-font-size);
+    }
+
+    h1 {
+        font-size: var(--large-H1);
+    }
+
+    h2 {
+        font-size: var(--large-H2);
     }
 
     /* turn of toggle button */
@@ -253,6 +301,10 @@ footer.spanFooter {
 
     .footer a {
         padding-bottom: 2rem;
+    }
+
+    span {
+        font-size: var(--large-small-text);
     }
 
     footer .middle {
