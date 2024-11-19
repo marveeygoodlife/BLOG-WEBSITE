@@ -1,0 +1,261 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: darkslategray;
+    --background-color: whitesmoke, snow, white;
+    --font-style: Tahoma, monospace, Helvetica, sans-serif;
+    --font-size: 1em;
+    --xx-font-size: 1.2em;
+}
+
+html {
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: whitesmoke;
+    font-weight: bold;
+    font-family: var(--font-style);
+    font-size: var(--font-size);
+}
+
+/* navigation style start */
+.toggle-nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    height: 50px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+#navBar.open {
+    display: flex;
+}
+
+#navBar {
+    display: none;
+    flex-direction: column;
+}
+
+.toggle-nav .bar {
+    width: 100%;
+    height: 6px;
+    background-color: var(--primary-color);
+}
+
+#navBar a.navlink {
+    width: 80%;
+    display: block;
+    padding: 10px;
+}
+
+/* navigation style end */
+main {
+    line-height: 2;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    color: #333333;
+    margin-top: 2rem auto;
+    overflow: hidden;
+    gap: 10px;
+}
+
+.post {
+    margin: 1rem auto;
+    display: flex;
+    flex-flow: column;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+header,
+footer {
+    padding: 30px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+header {
+    top: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+h1:hover {
+    color: darkseagreen;
+}
+
+.mainH2:hover {
+    color: var(--primary-color);
+}
+
+#article,
+#article2,
+#news {
+    padding: 15px;
+    margin-top: 2rem;
+}
+
+#navBar a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px;
+    color: #FFFFFF;
+    width: fit-content;
+}
+
+#navBar a:hover {
+    text-decoration: underline;
+    background-color: darkseagreen;
+    padding: 10px;
+    border-radius: 10px 9px;
+    border-right: 2px solid rgb(70, 115, 115);
+}
+
+.footer a {
+    transition: tranform 3s ease-in-out;
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+footer .middle {
+    margin-top: 2rem;
+}
+
+a:visited {
+    color: rgb(226, 226, 226);
+}
+
+a:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(237, 237, 68);
+}
+
+footer.spanFooter {
+    text-align: center;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        font-size: 1.2em;
+    }
+
+    .main {
+        flex-direction: unset;
+        flex-wrap: wrap;
+    }
+
+    /* turn of toggle button */
+    .toggle-nav {
+        display: none;
+    }
+
+    #navBar {
+        display: inline-flex;
+        position: static;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    #navBar a {
+        font-size: 1.4rem;
+        padding: 12px;
+    }
+
+
+    .post {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    #article {
+        flex: 1 1 50%;
+    }
+
+    #article2 {
+        flex: 1 1 25%;
+    }
+
+    #news {
+        flex: 1 1 25%;
+    }
+
+
+
+    h2 {
+        margin: 1rem;
+        font-size: 2rem;
+    }
+
+    footer#footer {
+        bottom: 0;
+        margin-top: 4rem;
+        text-align: center;
+        font-size: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media screen and (min-width:1024px) {
+    body {
+        font-size: 1.3em;
+    }
+
+    /* turn of toggle button */
+    .toggle-nav {
+        display: none;
+    }
+
+    .main {
+        flex-wrap: nowrap;
+    }
+
+    #navBar {
+        position: static;
+        gap: 50px;
+    }
+
+    #navBar a {
+        font-size: 1.9rem;
+        padding: 12px;
+    }
+
+    .footer a {
+        padding-bottom: 2rem;
+    }
+
+    footer .middle {
+        margin-top: 0;
+    }
+}
