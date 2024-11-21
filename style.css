@@ -33,9 +33,20 @@
 :root {
     --primary-color: darkslategray;
     --background-color: whitesmoke, snow, white;
-    --font-style: Tahoma, monospace, Helvetica, sans-serif;
-    --font-size: 1em;
-    --xx-font-size: 1.2em;
+    --font-style: "Roboto", "Open Sans", "Lato", "Merriweather";
+    --header-font: "Oswald", "Montserrat", "Playfair";
+    --small-font-style: 1rem;
+    --medium-font-size: 1.125rem;
+    --large-font-size: 1.25rem;
+    --small-H1: 24px;
+    --medium-H1: 28px;
+    --large-H1: 32px;
+    --small-H2: 21px;
+    --medium-H2: 25px;
+    --large-H2: 29px;
+    --small-text: 12px;
+    --medium-small-text: 14px;
+    --large-small-text: 16px;
 }
 
 html {
@@ -48,6 +59,26 @@ body {
     background-color: whitesmoke;
     font-weight: bold;
     font-family: var(--font-style);
+    font-size: var(--small-font-style);
+}
+
+h1 {
+    font-size: var(--small-H1);
+}
+
+h2 {
+    font-size: var(--small-H2);
+}
+
+h1,
+h2,
+small,
+dt {
+    font-family: var(--header-font);
+}
+
+span {
+    font-size: var(--small-text);
     font-size: var(--small-font-style);
 }
 
@@ -81,6 +112,9 @@ span {
     height: 25px;
     justify-content: space-between;
     cursor: pointer;
+    border: none;
+    background-color: none;
+    padding: 2px;
 }
 
 #navBar.open {
@@ -217,6 +251,7 @@ p {
 @media screen and (min-width: 600px) {
     body {
         font-size: var(--medium-font-size);
+        font-size: var(--medium-font-size);
     }
 
     .main {
@@ -296,6 +331,15 @@ p {
 
     h2 {
         font-size: var(--large-H2);
+        font-size: var(--large-font-size);
+    }
+
+    h1 {
+        font-size: var(--large-H1);
+    }
+
+    h2 {
+        font-size: var(--large-H2);
     }
 
     /* turn of toggle button */
@@ -319,6 +363,10 @@ p {
 
     .footer a {
         padding-bottom: 2rem;
+    }
+
+    span {
+        font-size: var(--large-small-text);
     }
 
     span {
