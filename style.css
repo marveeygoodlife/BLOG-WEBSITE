@@ -31,8 +31,10 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 60px;
-    height: 50px;
+    width: 25px;
+    background-color: inherit;
+    border: none;
+    height: 25px;
     justify-content: space-between;
     cursor: pointer;
 }
@@ -48,8 +50,8 @@ body {
 
 .toggle-nav .bar {
     width: 100%;
-    height: 6px;
-    background-color: var(--primary-color);
+    height: 2px;
+    background-color: black;
 }
 
 #navBar a.navlink {
@@ -161,6 +163,10 @@ footer.spanFooter {
 
 .nowrap {
     white-space: nowrap;
+}
+
+p {
+    display: block;
 }
 
 @media screen and (min-width: 600px) {
