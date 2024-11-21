@@ -185,18 +185,17 @@ h1:hover {
     color: var(--primary-color);
 }
 
-#article,
+#article1,
 #article2,
 #news {
-    padding: 15px;
-    margin-top: 2rem;
+    padding: 10px;
+    margin-top: 1rem;
 }
 
 #navBar a {
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: bold;
-    padding: 10px;
     color: #FFFFFF;
     width: fit-content;
 }
@@ -204,7 +203,6 @@ h1:hover {
 #navBar a:hover {
     text-decoration: underline;
     background-color: darkseagreen;
-    padding: 10px;
     border-radius: 10px 9px;
     border-right: 2px solid rgb(70, 115, 115);
 }
