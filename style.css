@@ -68,6 +68,7 @@ span {
     height: 50px;
     justify-content: space-between;
     cursor: pointer;
+    border: none;
 }
 
 #navBar.open {
