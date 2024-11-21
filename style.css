@@ -287,11 +287,7 @@ dl#description-list {
         padding: 12px;
     }
 
-    dl {
-        margin: 1rem auto;
-        max-width: 500px;
-        height: auto;
-    }
+
 
     .post {
         display: flex;
@@ -327,6 +323,7 @@ dl#description-list {
     dl#description-list {
         max-width: 500px;
         border-left: 2.5px solid black;
+        background-color: #c4bcbc;
 
     }
 
@@ -401,6 +398,8 @@ dl#description-list {
 
     dl#description-list {
         max-width: 600px;
+        background-color: #c4bcbc;
+
         border-left: 4px solid black;
     }
 }
