@@ -207,11 +207,7 @@ h1:hover {
     border-right: 2px solid rgb(70, 115, 115);
 }
 
-dl {
-    margin: 1rem auto;
-    max-width: 400px;
-    height: auto;
-}
+
 
 .footer a {
     transition: tranform 3s ease-in-out;
@@ -252,9 +248,9 @@ p {
     display: block;
 }
 
-dl {
+dl#description-list {
     margin: 1rem auto;
-    width: max-content;
+    max-width: 300px;
     height: auto;
     border-left: 1.5px solid black;
     padding: 10px;
@@ -328,8 +324,8 @@ dl {
 
     }
 
-    dl {
-
+    dl#description-list {
+        max-width: 500px;
         border-left: 2.5px solid black;
 
     }
@@ -403,9 +399,8 @@ dl {
         margin-top: 0;
     }
 
-    dl {
-
+    dl#description-list {
+        max-width: 600px;
         border-left: 4px solid black;
-
     }
 }
