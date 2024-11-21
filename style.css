@@ -207,6 +207,12 @@ h1:hover {
     border-right: 2px solid rgb(70, 115, 115);
 }
 
+dl {
+    margin: 1rem auto;
+    max-width: 400px;
+    height: auto;
+}
+
 .footer a {
     transition: tranform 3s ease-in-out;
     font-size: 1.1rem;
@@ -246,6 +252,17 @@ p {
     display: block;
 }
 
+dl {
+    margin: 1rem auto;
+    width: max-content;
+    height: auto;
+    border-left: 1.5px solid black;
+    padding: 10px;
+    text-align: justify;
+    background: #c4bcbc;
+}
+
+/* small screen design */
 @media screen and (min-width: 600px) {
     body {
         font-size: var(--medium-font-size);
@@ -274,13 +291,18 @@ p {
         padding: 12px;
     }
 
+    dl {
+        margin: 1rem auto;
+        max-width: 500px;
+        height: auto;
+    }
 
     .post {
         display: flex;
         flex-flow: column wrap;
     }
 
-    #article {
+    #article1 {
         flex: 1 1 50%;
     }
 
@@ -303,6 +325,12 @@ p {
 
     span {
         font-size: var(--medium-small-text);
+
+    }
+
+    dl {
+
+        border-left: 2.5px solid black;
 
     }
 
@@ -373,5 +401,11 @@ p {
 
     footer .middle {
         margin-top: 0;
+    }
+
+    dl {
+
+        border-left: 4px solid black;
+
     }
 }
